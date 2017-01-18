@@ -1,7 +1,7 @@
 {
-  "name": "Alexa",
+  "name": "CharlotteSchedule",
   "version": "0.0.1",
-  "description": "Control a Tesla from Alexa",
+  "description": "Get Charlotte's schedule via Alexa",
   "author": "Tim Dorr <timdorr@timdorr.com>",
   "license": "MIT",
   "dependencies": {
