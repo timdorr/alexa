@@ -1,0 +1,15 @@
+{
+  "name": "Alexa",
+  "version": "0.0.1",
+  "description": "Control a Tesla from Alexa",
+  "author": "Tim Dorr <timdorr@timdorr.com>",
+  "license": "MIT",
+  "dependencies": {
+    "alexa-sdk": "^1.0.6",
+    "moment": "^2.17.1",
+    "moment-timezone": "^0.5.11"
+  },
+  "scripts": {
+    "charlotte": "zip -rq charlotte.zip charlotte.js node_modules/ && aws lambda update-function-code --function-name CharlotteSchedule --zip-file fileb://./charlotte.zip && rm charlotte.zip"
+  }
+}
