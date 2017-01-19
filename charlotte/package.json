@@ -10,6 +10,6 @@
     "moment-timezone": "^0.5.11"
   },
   "scripts": {
-    "charlotte": "zip -rq charlotte.zip charlotte.js node_modules/ && aws lambda update-function-code --function-name CharlotteSchedule --zip-file fileb://./charlotte.zip && rm charlotte.zip"
+    "publish": "zip -rq charlotte.zip charlotte.js node_modules/ && aws lambda update-function-code --function-name CharlotteSchedule --zip-file fileb://./charlotte.zip && rm charlotte.zip"
   }
 }
