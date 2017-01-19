@@ -1,0 +1,13 @@
+{
+  "name": "CastControl",
+  "version": "0.0.1",
+  "description": "Control Chromecast devices via Alexa",
+  "author": "Tim Dorr <timdorr@timdorr.com>",
+  "license": "MIT",
+  "dependencies": {
+    "alexa-sdk": "^1.0.6"
+  },
+  "scripts": {
+    "publish": "zip -rq chromecast.zip chromecast.js node_modules/ && aws lambda update-function-code --function-name CastControl --zip-file fileb://./chromecast.zip && rm chromecast.zip"
+  }
+}
