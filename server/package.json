@@ -1,0 +1,17 @@
+{
+  "name": "Pilexa",
+  "version": "0.0.1",
+  "description": "A node server to run on a Raspberry Pi for certain Alexa commands",
+  "author": "Tim Dorr <timdorr@timdorr.com>",
+  "license": "MIT",
+  "dependencies": {
+    "castv2-client": "^1.2.0",
+    "dns-txt": "^2.0.2",
+    "express": "^4.14.0",
+    "morgan": "^1.7.0",
+    "multicast-dns": "^6.1.0"
+  },
+  "scripts": {
+    "start": "node index.js"
+  }
+}
